@@ -16,7 +16,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { db } from "../../firebase-config";
 import Modal from '@mui/material/Modal';
-import {collection,getDocs,addDoc,updateDoc,deleteDoc, doc,} from "firebase/firestore";
+import {collection,getDocs,deleteDoc, doc,} from "firebase/firestore";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Swal from "sweetalert2";
@@ -55,14 +55,16 @@ export default function ProductList() {
   const handleEditOpen = () => setEditOpen(true)
   const handleEditClose = () => setEditOpen(false)
 
-  useEffect(() => {
-    getUsers();
-  }, []);
+
 
   const getUsers = async () => {
     const data = await getDocs(empCollectionRef);
     setRows(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
   };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
