@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Setting from './Pages/Setting'
-import About from './Pages/About'
 import Analytics from './Pages/Analytics'
 import Products from './Pages/Products'
 

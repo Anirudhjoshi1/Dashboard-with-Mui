@@ -1,6 +1,5 @@
 import React from 'react'
 import Sidenav from '../Sidenav'
-import Typography from '@mui/material/Typography';
 import { Box } from '@mui/material'
 import Navbar from '../Components/Navbar';
 

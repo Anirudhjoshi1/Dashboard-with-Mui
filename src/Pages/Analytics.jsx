@@ -3,13 +3,10 @@ import Sidenav from "../Sidenav";
 import Typography from "@mui/material/Typography";
 import {
   Box,
-  Button,
   Card,
-  CardActions,
   CardContent,
-  CardMedia,
   Grid,
-  Stack,
+  Stack
 } from "@mui/material";
 import Navbar from "../Components/Navbar";
 
