@@ -6,12 +6,10 @@ import {
   Typography,
   Container,
   Paper,
-  FormControlLabel,
-  Checkbox,
   Link,
   Divider,
 } from "@mui/material";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import GoogleIcon from "@mui/icons-material/Google";
 
 const SignUp = () => {

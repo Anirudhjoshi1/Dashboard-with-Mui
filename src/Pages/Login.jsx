@@ -8,10 +8,9 @@ import {
   Paper,
   FormControlLabel,
   Checkbox,
-  Link,
-  Divider,
+  Link
 } from "@mui/material";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import GoogleIcon from "@mui/icons-material/Google";
 
 const Login = () => {
@@ -20,7 +19,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleDashboard = () => {
-    navigate("/Home");
+    navigate("/home");
   };
 
   return (
@@ -134,7 +133,7 @@ const Login = () => {
             <Box display="flex" alignItems="center" justifyContent="center">
             <Typography variant="body2">
               Don't have an account?{" "}
-              <Link  href="/Signup" underline="hover">
+              <Link  href="/signup" underline="hover">
                 Sign up
               </Link>
             </Typography>

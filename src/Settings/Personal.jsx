@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextField ,Box, Card, CardContent, Grid, Grid2, Stack, Typography ,MenuItem} from "@mui/material";
+import { TextField ,Box, Card, CardContent, Grid,  Typography ,MenuItem} from "@mui/material";
 
 const Personal = () => {
   return (
