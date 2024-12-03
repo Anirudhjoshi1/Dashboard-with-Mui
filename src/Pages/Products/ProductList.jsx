@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useCallback } from 'react';
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -25,6 +26,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import AddProduct from "./AddProduct";
 import { useAppStore } from '../../appStore';
 import EditProducts from "./EditProduct";
+
 
 
 const style = {
@@ -57,10 +59,10 @@ export default function ProductList() {
 
 
 
-  const getUsers = async () => {
+  const getUsers = useCallback(async () => {
     const data = await getDocs(empCollectionRef);
     setRows(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-  };
+  }, [empCollectionRef, setRows]);
 
   useEffect(() => {
     getUsers();
