@@ -14,11 +14,10 @@ export default function Accordian() {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Accordion 1
+          Mac Books
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        MacBook is a brand of Mac notebook computers developed and marketed by Apple that use Apple's macOS operating system since 2006.
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -27,25 +26,10 @@ export default function Accordian() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          Accordion 2
+            Samsung Oled TV
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2-content"
-          id="panel2-header"
-        >
-          Accordion 2
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        An OLED TV is a type of television that relies on OLED display technology to render images on your television panel.
         </AccordionDetails>
       </Accordion>
 
@@ -55,11 +39,23 @@ export default function Accordian() {
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          Accordion 2
+          Motorola g series
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        The Moto G is an Android smartphone developed and manufactured by Motorola Mobility, at the time a subsidiary of Google 
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+          I phones
+        </AccordionSummary>
+        <AccordionDetails>
+        The iPhone is a line of smartphones developed and marketed by Apple that run iOS, the company's own mobile operating system. The first-generation iPhone was announced by then–Apple CEO Steve Jobs on January 9, 2007, at Macworld 2007, and launched later that year.
         </AccordionDetails>
       </Accordion>
     </div>

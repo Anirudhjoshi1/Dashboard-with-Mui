@@ -12,6 +12,7 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import Accordion from "../Components/Accordian";
 import BarChart from "../Charts/BarChart";
+import CountUp from 'react-countup';
 
 const Home = () => {
   return (
@@ -31,7 +32,9 @@ const Home = () => {
                   <CreditCardIcon/>
                 </div>
                   <Typography gutterBottom variant="h5" component="div" sx={{color:"#ffffff"}}>
-                    $500.00
+                    $
+                    <CountUp delay={0.2} end={100000} duration={0.9}
+                        />
                   </Typography>
                   <Typography gutterBottom variant="body2" component="div"
                   sx={{color: "#ccd1d1"}}>
@@ -46,7 +49,8 @@ const Home = () => {
                   <ShoppingBagIcon/>
                 </div>
                   <Typography gutterBottom variant="h5" component="div" sx={{color:"#ffffff"}}>
-                    $900.00
+                  <CountUp delay={0.2} end={12500} duration={0.9}
+                        />
                   </Typography>
                   <Typography gutterBottom variant="body2" component="div"
                   sx={{color: "#ccd1d1"}}>
@@ -56,18 +60,21 @@ const Home = () => {
               </Card>
               </Stack>
             </Grid>
+
+            
             <Grid item xs={4}>
             <Stack spacing={2} >
-            <Card sx={{minWidth:450 + "px"}} id="gradientlight">
+            <Card sx={{minWidth:380 + "px"}} id="gradientlight">
                     <Stack spacing={2} direction={"row"}>
                     <div id="hero">
                     <StoreFrontIcon />
                     </div>
                  
                     <div className="paddingall">
-                    <span className="pricetitle1">$203k</span>
+                    <span className="pricetitle1"><CountUp delay={0.2} end={20000} duration={0.9}
+                        /></span>
                     <br />
-                    <span className="pricesubtitle1">Total Income</span>
+                    <span className="pricesubtitle1">Page Views</span>
                     </div>
                     </Stack>
               
@@ -78,9 +85,10 @@ const Home = () => {
                     <StoreFrontIcon />
                     </div>
                     <div className="paddingall">
-                    <span className="pricetitle">$203k</span>
+                    <span className="pricetitle"><CountUp delay={0.2} end={4500} duration={0.9}
+                        /></span>
                     <br />
-                    <span className="pricesubtitle">Total Income </span>
+                    <span className="pricesubtitle">New Users </span>
                     </div>
                     </Stack>
              
@@ -96,10 +104,10 @@ const Home = () => {
                   </CardContent>      
               </Card>
             </Grid>
-            <Grid size={4}>
-            <Card sx={{ height:60 + "vh"}}>
+            <Grid size={4} >
+            <Card sx={{ maxWidth:380 +"px"   ,height:60 + "vh"}}>
                   <CardContent>
-                  <div className="paddingall">
+                  <div className="paddingall" id="specific" >
                     <span className="pricetitle">Popular Products</span>
                     </div>
                     
@@ -108,6 +116,8 @@ const Home = () => {
               </Card>
             </Grid>
           </Grid>
+
+
         </Box>
       </Box>
       </div>

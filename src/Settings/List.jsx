@@ -7,6 +7,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Profile from './Profile'
 import Personal from './Personal'
+import Account from './Account'
+import Password from './Password'
 
 
 
@@ -36,10 +38,10 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     marginRight: theme.spacing(1),
     color: '#141414',
     '&.Mui-selected': {
-      color: '#0c828f'
+      color: '#141414'
     },
     '&.Mui-focusVisible': {
-      backgroundColor: '#30c1d1',
+      backgroundColor: '#0c828f',
     },
   }),
 );
@@ -88,7 +90,9 @@ export default function Lists() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <StyledTabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <StyledTab label="Profile" {...a11yProps(0)} />
-          <StyledTab label="Personal" {...a11yProps(1)} />
+          <StyledTab label="Personal Details" {...a11yProps(1)} />
+          <StyledTab label="My Account" {...a11yProps(2)} />
+          <StyledTab label="Change Password" {...a11yProps(3)} />
 
         </StyledTabs>
       </Box>
@@ -97,6 +101,12 @@ export default function Lists() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <Personal/>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        <Account/>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
+        <Password/>
       </CustomTabPanel>
     </Box>
     </CardContent>

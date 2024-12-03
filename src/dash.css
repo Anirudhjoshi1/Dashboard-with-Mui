@@ -6,6 +6,10 @@
     font-weight: 600;
 }
 
+#specific{
+    margin-bottom: 10px;
+}
+
 .pricetitle1{
     font-weight: 600;
     color:#eceff1;
@@ -50,4 +54,8 @@
     min-height: 100vh;
     background: #eceff1;
     background: linear-gradient(158deg rgb(224,224,224) 0% , rrgb(233,237,254) 100%);
+}
+
+#btn_Submit{
+    padding: 10px 40px;
 }

@@ -96,7 +96,7 @@ export default function Sidenav() {
         </DrawerHeader>
         <Divider />
         <List>
-        <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/")}}>
+        <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/Home")}}>
               <ListItemButton
                 sx={[
                   {
