@@ -24,7 +24,7 @@ const EditProducts = ({ onClose ,fid }) => {
       setName(fid.name);
       setPrice(fid.price)
       setCategory(fid.category)
-    }, []);
+    }, [fid]);
     
 
 

@@ -64,7 +64,7 @@ export default function ProductList() {
 
   useEffect(() => {
     getUsers();
-  }, []);
+  }, [getUsers]);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
